@@ -1,0 +1,87 @@
+body {
+	background: #2C3338;
+	color: #DDD;
+}
+
+a {
+	color: #FFF;
+	text-decoration:none;
+}
+
+a:hover {
+	color: #F3D;
+}
+
+.wrap {
+	width: 500px;
+}
+
+.block, .post {
+	display: block;
+    width: 500px;
+    margin: 0 auto;
+	background: #282E33;
+	border: 2px solid #454C54;
+	border-radius: 8px;
+	-webkit-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.50);
+	-moz-box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.50);
+	box-shadow: 0px 0px 17px 0px rgba(0,0,0,0.50);
+}
+
+.login_msg {
+	color: #fff;
+	margin: 5px 0;
+	display: block;
+}
+
+form {
+	padding: 30px;
+}
+
+input, textarea {
+	background: none;
+    border: 1px solid #454C54;
+    padding: 10px 5px;
+    margin: 5px 0;
+    width: 100%;
+	color: #fff;
+}
+
+
+input.submit {
+	background: #3E3E3E;
+    border: none;
+    color: #fff;
+    padding: 10px 0;
+    margin-top: 5px;
+	cursor: pointer;
+}
+
+input.submit:hover {
+	background: #4E4E4E;
+	transition: background .3s;
+}
+
+.center {
+	width: 500px;
+    margin: 0 auto;
+}
+
+.wrap {
+	margin: 0 auto;
+}
+
+.post {
+	padding: 10px;
+	margin-bottom: 10px;
+}
+
+	.header {
+		display: inline-block;
+	}
+	
+	.author {
+		display: inline-block;
+		float: right;
+		font-size: 0.8em;
+	}

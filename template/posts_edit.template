@@ -1,0 +1,9 @@
+<div class="wrap">
+	<form method="post">
+		<input class="post-header" type="text" name="header" value="<?php echo $posts['title']; ?>"><br />
+		<textarea class="post-content" name="content" rows="15" cols="40"><?php echo $posts['content']; ?></textarea>
+		<input type="hidden" name="csrf_key" value="<?php echo $_SESSION['token']; ?>">
+		<input type="hidden" name="id" value="<?php echo $posts['id']; ?>">
+		<input class="submit" type="submit" name="save" value="Lagre">
+	</form>
+</div>
