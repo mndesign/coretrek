@@ -1,0 +1,58 @@
+test av nyansatte i PHP og Mysql
+==============================================================
+
+Forutsetning: 
+--------------------------------------------------------------
+- PC med fri tilgang til internett. 
+- Editor installert
+- Putty SSH terminal åpen mot mysql database
+- Databasen er opprettet på forhånd 
+- Tilgangsinformasjon til databasen er oppgitt 
+- Classes-directory med ferdige databaseklasser
+
+MERK: Les hele oppgaven og vektleggingen før du starter!
+
+All kode, variabler, metoder, kommentarer etc skal være på engelsk. 
+
+Oppgave:									
+--------------------------------------------------------------
+Du skal lage et super-enkelt publisering-system for web. 
+
+Alle spørringer etc mot databasen skal skje ved hjelp av klassene du finner i classes/ katalogen.
+
+Oppgave 1: 
+- Du skal lage to databasetabeller, en brukertabell og en tabell for selve innholdet på websiden.
+- Brukertabellen skal kun inneholde id, brukernavn, passord og fullt navn, tilsammen 4 felter.
+- Innholdstabellen med "artikler" skal kun inneholde id, overskrift , innhold og id'en på den brukeren som har laget den, tilsammen 4 felter. 
+- Create-statements for tabellene skal lagres i en text-fil.
+
+Oppgave 2 - Innlogging: 
+- På grunnlag av brukertabellen du laget skal du lage en enkel mekanisme for innlogging. Du skal lage en forside (index.php) med et skjema hvor man kan fylle inn brukernavn og passord. Skjemaet skal submitte til en ny side (login.php) som validerer brukernavn og passord opp mot brukertabellen. 
+- Dersom det oppgis riktig brukernavn og passord, skal brukeren sendes videre til en innlogget side (innlogget.php), hvis ikke skal man sendes tilbake til index.php med en feilmelding. 
+- På innlogget.php skal det også være en sjekk at brukeren faktisk er innlogget. Det skal brukes session håndtering i PHP.
+
+Oppgave 3 - publiseringsystem
+- på innlogget.php skal det være en enkel liste over de forskjellige artiklene. Listen skal vise overskriften og navnet på brukeren som har laget den. 
+- Ved klikk på overskriften skal brukeren tas til rediger.php, hvor det skal være mulig å forandre overskrift og innhold på artikkelen, dvs lagre dette til databasen. 
+- Det trengs ikke funksjonalitet for å opprette og slette artikler. Testartikler kan legges til direkte i databasen. 
+
+
+Hva blir vektlagt: 
+--------------------------------------------------------------
+Strukturert, bra og leselig kode                        40%
+Bruk av objektorientering                               30%
+Kodekommentarer og forklaring av hva man har gjort      10%
+Feilhåndtering                                          10%
+Sikker og effektiv koding                                9%
+Utseende på sidene                                       1%
+
+
+Annet:
+--------------------------------------------------------------
+- Dersom du ikke vet hvordan du skal løse en oppgave, kan du skrive 
+"pseudo-kode", f.eks.: 
+
+if (bruker er logget inn) {
+        gjør oppslag mot database(connection);
+        gjør noe med resultatet()      
+}

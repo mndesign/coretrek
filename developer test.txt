@@ -1,0 +1,57 @@
+Test of PHP and Mysql
+==============================================================
+
+Prerequisites: 
+--------------------------------------------------------------
+- Computer with free access to the internet. 
+- IDE / Editor installed.
+- Putty SSH terminal opened to mysql database.
+- Database is already created.
+- Credentials to the database is provided. 
+- Classes-directory with complete database classes. 
+
+NOTE: Read the entire task and weigthing/emphasizing before starting!
+
+All code, variables, methods, comments etc. shall be in English.
+
+Task:									
+--------------------------------------------------------------
+You're asked to make a super simple publishing system for the web. 
+
+All queries against the database must be done with the provided classes located in the classes folder.
+
+Sub task 1 - create database tables: 
+- You must make two database tables, a user table and a table for the actual content of the webpage.
+- The user table should only contain id, username, password and full name, a total of 4 fields.
+- The table of "articles" should only contain id, title, content and id of the user who created it, a total of 4 fields.
+- Create-statements for the tables are to be stored in a text file.
+
+Sub task 2 - authentication / login: 
+- On the basis of the user table you created in task 1, you should create a simple mechanism for logging in. Create a front page ("index.php") with a form where you can fill in your username and password. The form shall submit to a new page ("login.php"), which validates the username and password against the user table.
+- If the correct username/password is submitted, the user is forwarded to a login page ("loggedin.php"), if not one should be sent back to "index.php" with an error.
+- On "loggedin.php" there should also be a check to validate that the user is actually logged. Used session handling in PHP for this.
+
+Sub task 3 - publishing system
+- On the logged in page "loggedin.php", you'll create a simple list of the available articles. The list shall show the title and name of the user who created it.
+- Clicking on the title, the user should be taken to "edit.php", where it should be possible to change the title and content of the article, i.e. save this to the database.
+- It is not necessary to have the ability to create and delete articles. Test data/artiles can be added directly in the database.
+
+
+What will be emphasized:
+--------------------------------------------------------------
+Structured, quality and readability of the code           40%
+Use of object orientation                                 30%
+Code comments and explanation of what you have done       10%
+Error handling                                            10%
+Safe and effective coding                                  9%
+Appearance/styling of pages                                1%
+
+
+Other:
+--------------------------------------------------------------
+- If you do not know how to solve a task, you can write "pseudo-code", i.e.: 
+
+if (user is logged in) {
+        make query against database(connection);
+        do something with the result()      
+}
